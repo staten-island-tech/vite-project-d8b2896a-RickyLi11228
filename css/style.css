@@ -1,0 +1,21 @@
+:root {
+    --blue: #2998ef;
+    --orange: #ff7730;
+    --primary: var(--blue)
+
+}
+.blue {
+    --primary: var(--blue);
+}
+.orange {
+    --primary: var(--orange);
+}
+body {
+    background-color: var(--primary);
+}
+h1{
+    font-size: var(--h1);
+}
+.section-title {
+    font-size: var(--h1);
+}
