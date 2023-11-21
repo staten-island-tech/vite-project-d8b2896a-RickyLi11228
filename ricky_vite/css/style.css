@@ -14,10 +14,12 @@ body,
 
 }
 .blue {
-    --primary: var(--blue);
+    --primary: var(--light-blue);
+    --secondary: var(--dark-blue);
 }
-.orange {
-    --primary: var(--orange);
+.red {
+    --primary: var(--light-red);
+    --secondary: var(--dark-red);
 }
 body {
     background-color: var(--primary);
