@@ -8,10 +8,12 @@ body,
 }
 
 :root {
-    --blue: #2998ef;
-    --orange: #ff7730;
-    --primary: var(--blue)
-
+    --light-blue: #2998ef;
+    --dark-blue: #0068b8;
+    --red: #ff3030;
+    --dark-red: #bb0000;
+    --primary: var(--light-blue);
+    --secondary: var(--dark-blue);
 }
 .blue {
     --primary: var(--light-blue);
@@ -21,8 +23,12 @@ body,
     --primary: var(--light-red);
     --secondary: var(--dark-red);
 }
-body {
+.one {
     background-color: var(--primary);
+}
+.two {
+    background-color: var(--secondary);
+    height: 90vh;
 }
 h1{
     font-size: var(--h1);
@@ -32,14 +38,14 @@ h1{
 }
 
 .column {
-    display:flex;
-    width: 90%;
-    height: 85%;
-    flex-wrap:wrap;
-    align-items: center;
-    justify-content:space-around;
-    margin: 10rem auto;
-    }
+display:flex;
+width: 90%;
+height: 85%;
+flex-wrap:wrap;
+align-items: center;
+justify-content:space-around;
+margin: 10rem auto;
+}
 .card {
 height: 500px;
 width: 350px;
@@ -52,16 +58,4 @@ align-items: top;
 align-items: center;
 justify-content: space-around;
 border-radius: 20px;
-}
-body{
-    background-color: rgba(240, 175, 100, 0.973);
-}
-.img{
-    flex-wrap: wrap;
-    align-items: center;
-    height: 230px;
-    width: 198px;
-    object-fit: cover;
-    border: 2px solid #000;
-    border-radius: 9px;
 }
